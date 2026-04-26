@@ -1,0 +1,648 @@
+[
+  {
+    "N": "001",
+    "Q": "A local area network operates",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) on a customer premises",
+      "B) between customer premises",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "002",
+    "Q": "What type of switch connects users to the network?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) user switches",
+      "B) core switches",
+      "C) access switches",
+      "D) workgroup switches"
+    ]
+  },
+  {
+    "N": "003",
+    "Q": "What type of switch connects switches to other switches?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) trunk switches",
+      "B) core switches",
+      "C) workgroup switches",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "004",
+    "Q": "In LANs, ______ typically is for ______",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) optical fiber, access lines",
+      "B) UTP, access lines",
+      "C) UTP, trunk lines",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "005",
+    "Q": "In LANs, optical fiber typically is used in",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) trunk lines",
+      "B) access lines",
+      "C) workgroup switches",
+      "D) core switches"
+    ]
+  },
+  {
+    "N": "006",
+    "Q": "Optical fiber's main advantage over UTP is",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) lower cost",
+      "B) lower fragility",
+      "C) higher speed",
+      "D) greater distance span"
+    ]
+  },
+  {
+    "N": "007",
+    "Q": "What organization creates Ethernet standards? (Give the most specific answer.)",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) IEEE",
+      "B) IETF",
+      "C) ISO",
+      "D) OSI"
+    ]
+  },
+  {
+    "N": "008",
+    "Q": "What 802 Working Group creates Ethernet standards?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 802.1",
+      "B) 802.2",
+      "C) 802.3",
+      "D) 802.11"
+    ]
+  },
+  {
+    "N": "009",
+    "Q": "In this book, we use the terms Ethernet and 802.3 interchangeably.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) TRUE",
+      "B) FALSE"
+    ]
+  },
+  {
+    "N": "010",
+    "Q": "Which working group is likely to develop security standards to be used by multiple LAN/WAN technologies?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) 802.1",
+      "B) 802.e",
+      "C) 802.3",
+      "D) 802.11"
+    ]
+  },
+  {
+    "N": "012",
+    "Q": "Ethernet standards are specified at the ______ layer.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) physical",
+      "B) data link",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "014",
+    "Q": "Ethernet has only a single standard at the ______ layer.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) physical",
+      "B) MAC",
+      "C) LLC",
+      "D) Internet"
+    ]
+  },
+  {
+    "N": "015",
+    "Q": "Physical layer standards govern",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) frame structure",
+      "B) signaling",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "016",
+    "Q": "In binary signaling there is (are) ______ state(s).",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) one",
+      "B) two",
+      "C) a number of",
+      "D) an infinite number of"
+    ]
+  },
+  {
+    "N": "020",
+    "Q": "What type of copper wiring is widely used in Ethernet?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) optical fiber",
+      "B) 4-pair UTP",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "021",
+    "Q": "How many wires are there is a UTP Ethernet cord?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 4",
+      "D) 8"
+    ]
+  },
+  {
+    "N": "022",
+    "Q": "4-pair UTP terminates in a(n) ______ connector.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) USB",
+      "B) RJ-45",
+      "C) SC",
+      "D) standard telephone"
+    ]
+  },
+  {
+    "N": "025",
+    "Q": "UTP categories rate the ______ of UTP cabling.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) quality",
+      "B) speed",
+      "C) quality-of-service performance",
+      "D) error performance"
+    ]
+  },
+  {
+    "N": "026",
+    "Q": "CAT 5e and CAT 6 wiring can carry Ethernet traffic 100 meters up to",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 10 Mbps",
+      "B) 100 Mbps",
+      "C) 1 Gbps",
+      "D) 10 Gbps"
+    ]
+  },
+  {
+    "N": "027",
+    "Q": "Which UTP quality levels can send signals at 10 gigabits per second?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) category 6",
+      "B) category 6A",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "028",
+    "Q": "Which UTP quality levels are needed to send signals 100 meters at 10 gigabits per second?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) category 6",
+      "B) category 6A",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "029",
+    "Q": "Untwisting wire pairs no more than 1.25 cm (a half inch) at their ends reduces",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) interference",
+      "B) crosstalk interference",
+      "C) terminal crosstalk interference",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "031",
+    "Q": "When the light energies of two pulses arrive at overlapping times, this is",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) multimode transmission",
+      "B) modal bandwidth",
+      "C) modal dispersion",
+      "D) modal interference"
+    ]
+  },
+  {
+    "N": "032",
+    "Q": "Modal dispersion limits transmission distance in",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) multimode fiber",
+      "B) single-mode fiber",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "033",
+    "Q": "Fiber that has a core diameter of 8 microns is",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) multimode fiber",
+      "B) single-mode fiber",
+      "C) full duplex fiber",
+      "D) exceptionally fast"
+    ]
+  },
+  {
+    "N": "034",
+    "Q": "The longest transmission distances are possible with",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) USB",
+      "B) UTP",
+      "C) single-mode fiber",
+      "D) multimode fiber"
+    ]
+  },
+  {
+    "N": "035",
+    "Q": "Which of the following is used most heavily in LANs for fiber transmission links?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) modal bandwidth fiber",
+      "B) 1.550 nm fiber",
+      "C) single-mode fiber",
+      "D) multimode fiber"
+    ]
+  },
+  {
+    "N": "036",
+    "Q": "Optical fiber cords use two strands",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) for reliability through redundancy",
+      "B) to form a complete electrical loop",
+      "C) to double the transmission speed",
+      "D) for full-duplex (全雙工) transmission"
+    ]
+  },
+  {
+    "N": "037",
+    "Q": "The ability to transmit in two directions simultaneously is",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) parallel communication",
+      "B) full-duplex (全雙工) communication",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "039",
+    "Q": "Which light wavelength dominates in LANS?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) 850 nm",
+      "B) 1,310 nm",
+      "C) 1,550 nm",
+      "D) 1 Gbps"
+    ]
+  },
+  {
+    "N": "040",
+    "Q": "______ fiber is being sold today.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) OM2",
+      "B) OM4",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "041",
+    "Q": "Link aggregation can increase trunk speed by a factor (倍數) of",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) two",
+      "B) three",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "042",
+    "Q": "Ethernet usually has a 100 meter distance limit for",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) physical links",
+      "B) data links",
+      "C) routes",
+      "D) both A and B"
+    ]
+  },
+  {
+    "N": "043",
+    "Q": "At what layer is the 100BASE-TX standard?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) physical",
+      "B) data link",
+      "C) Internet",
+      "D) physical and data link"
+    ]
+  },
+  {
+    "N": "044",
+    "Q": "Ethernet addresses were formerly called ______ addresses.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) MAC",
+      "B) EUI-48",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "045",
+    "Q": "The official name for Ethernet addresses is the ______ addresses.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) MAC",
+      "B) EUI-48",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "046",
+    "Q": "The Ethernet data field contains",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) a packet",
+      "B) the LLC subheader",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "047",
+    "Q": "The purpose of LLC subheader is to",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) permit error detection",
+      "B) divide the data field from the trailer",
+      "C) divide the header from the data field",
+      "D) designate the type of packet in the data field"
+    ]
+  },
+  {
+    "N": "048",
+    "Q": "The Ethernet length field gives the length of the",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) frame",
+      "B) frame, less the frame check field's size",
+      "C) data field",
+      "D) data field plus PAD"
+    ]
+  },
+  {
+    "N": "049",
+    "Q": "If an Ethernet receiver detects an error in an arriving frame, it",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) drops the frame",
+      "B) sends an ACK to the sender",
+      "C) sends a NACK to the receiver",
+      "D) sends the sender a retransmission request frame"
+    ]
+  },
+  {
+    "N": "050",
+    "Q": "Using priority in Ethernet requires the use of ______ fields.",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) QoS",
+      "B) flag",
+      "C) extension",
+      "D) tag"
+    ]
+  },
+  {
+    "N": "052",
+    "Q": "Switches in an Ethernet LAN are organized in a ______ topology.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) mesh",
+      "B) hierarchical",
+      "C) point-to-point",
+      "D) bus"
+    ]
+  },
+  {
+    "N": "053",
+    "Q": "In a ______ topology, there is only one possible path between any two hosts.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) mesh",
+      "B) hierarchical",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "054",
+    "Q": "Ethernet is inexpensive thanks to",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) its hierarchical topology",
+      "B) its use of multiple switches",
+      "C) its use of regeneration",
+      "D) its use of the Rapid Spanning Tree Protocol"
+    ]
+  },
+  {
+    "N": "055",
+    "Q": "Ethernet becomes the dominant of LAN technology primarily because of its",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) high speed, compared with competing technologies",
+      "B) use of multiple switches",
+      "C) low cost, compared with competing technologies",
+      "D) sophistication, compared with competing technologies"
+    ]
+  },
+  {
+    "N": "056",
+    "Q": "Ethernet's hierarchical topology makes it",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) expensive",
+      "B) reliable",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "057",
+    "Q": "Ethernet's hierarchical topology tends to create",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) greater reliability",
+      "B) lower cost per frame handled",
+      "C) both A and B",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "058",
+    "Q": "Which of the following can increase reliability considerably in an Ethernet LAN?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) using a hierarchical topology",
+      "B) using a mesh topology",
+      "C) using a bus topology",
+      "D) using the Rapid Spanning Tree Protocol"
+    ]
+  },
+  {
+    "N": "059",
+    "Q": "Creating effective backup links in RSTP is",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) completely automatic",
+      "B) simple and largely automatic",
+      "C) difficult and time consuming",
+      "D) impossible"
+    ]
+  },
+  {
+    "N": "060",
+    "Q": "Ethernet can offer up to ______ priority levels.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) up to 2",
+      "B) up to 4",
+      "C) up to 8",
+      "D) Ethernet cannot offer priority levels."
+    ]
+  },
+  {
+    "N": "061",
+    "Q": "Managed Ethernet switches",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) are not standardized",
+      "B) are managed by an outsourcing company",
+      "C) reduce hardware costs",
+      "D) reduce labor costs"
+    ]
+  },
+  {
+    "N": "063",
+    "Q": "What is the maximum power for POE Plus in the standard?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) 15 watts",
+      "B) 25 watts",
+      "C) 75 watts",
+      "D) 150 watts"
+    ]
+  },
+  {
+    "N": "064",
+    "Q": "Under the POE Plus standard, Ethernet switches can provide enough power over UTP for",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) wireless access points",
+      "B) voice over IP telephones",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "065",
+    "Q": "Under the POE Plus standard, Ethernet switches can provide enough power over UTP for",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) wireless access points",
+      "B) desktop computers",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  }
+]

@@ -1,0 +1,806 @@
+[
+  {
+    "N": "001",
+    "Q": "Depicting the Internet as a cloud symbolizes that ________.",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) the Internet is amorphous",
+      "B) the Internet is no longer understandable by humans",
+      "C) the Internet is too complex for anyone to depict",
+      "D) users do not have to know how the Internet operates and where resources are located"
+    ]
+  },
+  {
+    "N": "003",
+    "Q": "Which of the following is a host when it is on a network?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) a client PC",
+      "B) a server",
+      "C) a mobile phone",
+      "D) all of the above"
+    ]
+  },
+  {
+    "N": "004",
+    "Q": "Application programs on ________ communicate by sending messages between each other.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) the same host",
+      "B) different hosts",
+      "C) the same network",
+      "D) different networks"
+    ]
+  },
+  {
+    "N": "005",
+    "Q": "What kind of address do hosts have on the Internet?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) World Wide Web URLs",
+      "B) MAC addresses",
+      "C) EUI-48 addresses",
+      "D) IP addresses"
+    ]
+  },
+  {
+    "N": "006",
+    "Q": "60.49.7.254 is an ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) IPv4 address",
+      "B) IPv6 address",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "007",
+    "Q": "The address 60.49.7.254 is represented in ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) dotted decimal notation",
+      "B) EUI-48 notation",
+      "C) hexadecimal notation",
+      "D) binary notation"
+    ]
+  },
+  {
+    "N": "009",
+    "Q": "What type of address is 32 bits long?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) IPv4",
+      "B) IPv6",
+      "C) EUI-48",
+      "D) all of the above"
+    ]
+  },
+  {
+    "N": "011",
+    "Q": "________ collectively form the core of the Internet service.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) CSPs",
+      "B) ISO, the IETF, and ITU-T",
+      "C) ISPs",
+      "D) Telephone companies"
+    ]
+  },
+  {
+    "N": "012",
+    "Q": "Who controls the Internet?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) the U.S. government",
+      "B) the United Nations",
+      "C) the IETF",
+      "D) no one"
+    ]
+  },
+  {
+    "N": "026",
+    "Q": "Guarantees by a provider to meet certain delivery quality specifications are called ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) speed quality guarantees",
+      "B) service level agreements",
+      "C) service warranties",
+      "D) contracts"
+    ]
+  },
+  {
+    "N": "027",
+    "Q": "Network speeds usually are measured in ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) bits per second",
+      "B) bytes per second",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "028",
+    "Q": "320,000 kbps is ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) 320 bps",
+      "B) 320 Mbps",
+      "C) 320 Gbps",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "032",
+    "Q": "0.02 Gbps can also be written as ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) 2 Mbps",
+      "B) 20 Mbps",
+      "C) 200 Mbps",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "035",
+    "Q": "Dividing an application message into a series of smaller message segments is called ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) fragmentation",
+      "B) packetization",
+      "C) serialization",
+      "D) multiplexing"
+    ]
+  },
+  {
+    "N": "036",
+    "Q": "If a transmission link has a relatively high error rate, ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) fragmentation is likely to reduce delivery time for the entire application message",
+      "B) fragmentation is likely to increase delivery time for the entire application message",
+      "C) either A or B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "037",
+    "Q": "When messages of different users share a transmission line, this is ________.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) fragmentation",
+      "B) packetization",
+      "C) multiplexing",
+      "D) parallel transmission"
+    ]
+  },
+  {
+    "N": "038",
+    "Q": "Multiplexing ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) reduces cost",
+      "B) increases transmission speed",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "039",
+    "Q": "The most widely used single network address is the ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) EUI-48 address",
+      "B) MAC address",
+      "C) IP address",
+      "D) PPP address"
+    ]
+  },
+  {
+    "N": "040",
+    "Q": "All single network addresses are ________ addresses.",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) EUI-48",
+      "B) IP",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "041",
+    "Q": "Data link layer standards govern ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) connectors",
+      "B) frame organization",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "042",
+    "Q": "Data link layer standards govern ________.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) switch operation",
+      "B) frame organization",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "043",
+    "Q": "At what layer do you find EUI-48 addresses?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) physical",
+      "B) data link",
+      "C) Internet",
+      "D) two or more of the above"
+    ]
+  },
+  {
+    "N": "044",
+    "Q": "At what layer are frames standardized?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) physical",
+      "B) data link",
+      "C) Internet",
+      "D) all of the above"
+    ]
+  },
+  {
+    "N": "046",
+    "Q": "At what layer(s) do you find single network standards?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) Layer 1",
+      "B) Layer 2",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "047",
+    "Q": "PPP is standardized at the ________ layer.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) physical",
+      "B) data link",
+      "C) Internet",
+      "D) transport"
+    ]
+  },
+  {
+    "N": "048",
+    "Q": "802.11 data link layer standards govern ________.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) frame organization",
+      "B) access point operation",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "049",
+    "Q": "In a single network transmission, there is always ________.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) a single frame",
+      "B) a single data link",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "050",
+    "Q": "Switches make decisions based on the ________.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) physical link address",
+      "B) source data link layer address",
+      "C) destination data link layer address",
+      "D) phase of the moon"
+    ]
+  },
+  {
+    "N": "051",
+    "Q": "An individual switch knows the frame's entire ________.",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) session",
+      "B) data link",
+      "C) route",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "052",
+    "Q": "In switched networks, to what device is a frame addressed?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) the destination host",
+      "B) switches",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "053",
+    "Q": "In hybrid Ethernet—802.11 networks, wireless clients use the Ethernet network to gain access to ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) internal servers",
+      "B) their access point",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "054",
+    "Q": "What device connects different networks into an Internet?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) router",
+      "B) workgroup switch",
+      "C) Network Access Point",
+      "D) core switch"
+    ]
+  },
+  {
+    "N": "055",
+    "Q": "In Internets, different networks are connected by ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) switches",
+      "B) routers",
+      "C) PCs",
+      "D) hot spots"
+    ]
+  },
+  {
+    "N": "056",
+    "Q": "Single network addresses in different single networks are ________.",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) unique",
+      "B) unique if the two single networks use the same technology standard",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "057",
+    "Q": "________ are carried inside ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) Packets, frames",
+      "B) Frames, packets",
+      "C) Frames, application message segments",
+      "D) Packets, application message segments"
+    ]
+  },
+  {
+    "N": "060",
+    "Q": "The path that a packet takes across an internet is a ________.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) physical link",
+      "B) data link",
+      "C) route",
+      "D) all of the above"
+    ]
+  },
+  {
+    "N": "061",
+    "Q": "The path that a frame takes across a single network is a ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) physical link",
+      "B) data link",
+      "C) route",
+      "D) all of the above"
+    ]
+  },
+  {
+    "N": "063",
+    "Q": "If two hosts are separated by seven networks, how many packets will there be along the way when a host transmits a packet to another host?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 7",
+      "D) 14"
+    ]
+  },
+  {
+    "N": "064",
+    "Q": "If two hosts are separated by seven networks, how many frames will there be along the way when a host transmits a packet to another host?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 7",
+      "D) 14"
+    ]
+  },
+  {
+    "N": "065",
+    "Q": "The source host and destination host are separated by seven networks. There will be seven ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) packets",
+      "B) frames",
+      "C) physical links",
+      "D) none of the above"
+    ]
+  },
+  {
+    "N": "066",
+    "Q": "If a frame passes through seven switches between the source and destination hosts, how many physical links will there be? (Careful!)",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 6",
+      "C) 7",
+      "D) 8"
+    ]
+  },
+  {
+    "N": "067",
+    "Q": "If a frame passes through eight switches between the source and destination hosts on a single network, how many data links will there be?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 8",
+      "D) 9"
+    ]
+  },
+  {
+    "N": "068",
+    "Q": "If a frame passes through two routers between the source and destination hosts, how many routes will there be?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 8",
+      "D) 9"
+    ]
+  },
+  {
+    "N": "069",
+    "Q": "At what layer would you find IP addresses?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "070",
+    "Q": "At what layer would you find EUI-48 addresses?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "071",
+    "Q": "At what layer would you find packets?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "072",
+    "Q": "At what layer would you find frames?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "073",
+    "Q": "At what layer would you find wire connections?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "074",
+    "Q": "At what layer would you find switches?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "075",
+    "Q": "At what layer would you find routers?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "076",
+    "Q": "Packets are ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) switched",
+      "B) routed",
+      "C) both A and B",
+      "D) neither A nor B."
+    ]
+  },
+  {
+    "N": "077",
+    "Q": "Standards tend to bring _________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) interoperability",
+      "B) higher prices",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "078",
+    "Q": "What layer number is the transport layer?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "080",
+    "Q": "What layer number is the Internet layer?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "082",
+    "Q": "Which layer's standards govern signaling?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "083",
+    "Q": "Which layer's standards govern delivering frames?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "084",
+    "Q": "Which layer's standards govern router operation?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ]
+  },
+  {
+    "N": "085",
+    "Q": "In the Five General Layers Standard, which layer's standards govern application message fragmentation?",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ]
+  },
+  {
+    "N": "086",
+    "Q": "In the Five General Layers Standard, which layer's standards govern application World Wide Web exchanges over the Internet?",
+    "A": "D",
+    "H": "",
+    "O": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ]
+  },
+  {
+    "N": "087",
+    "Q": "Application message fragmentation is done on the ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) source host",
+      "B) destination host",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "088",
+    "Q": "Application message reassembly is done on the ________.",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) source host",
+      "B) destination host",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "089",
+    "Q": "Which of the following is NOT a standards organization?",
+    "A": "B",
+    "H": "",
+    "O": [
+      "A) ISO",
+      "B) OSI",
+      "C) IETF",
+      "D) All of the above are standards organizations."
+    ]
+  },
+  {
+    "N": "090",
+    "Q": "OSI standards are dominant at the ________.",
+    "A": "C",
+    "H": "",
+    "O": [
+      "A) data link layer",
+      "B) physical layer",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "092",
+    "Q": "Which of the following is a host's official address on the Internet?",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) its IP address",
+      "B) its host name",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "093",
+    "Q": "If a host wishes to transmit packets to another host, it must find the other host's ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) IP address",
+      "B) host name",
+      "C) both A and B",
+      "D) neither A nor B"
+    ]
+  },
+  {
+    "N": "094",
+    "Q": "When the source host transmits a frame, the frame is addressed to the ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) destination host",
+      "B) first switch",
+      "C) first router",
+      "D) destination application"
+    ]
+  },
+  {
+    "N": "095",
+    "Q": "When the source host transmits a packet, the packet is addressed to the ________.",
+    "A": "A",
+    "H": "",
+    "O": [
+      "A) destination host",
+      "B) first switch",
+      "C) first router",
+      "D) destination application"
+    ]
+  }
+]

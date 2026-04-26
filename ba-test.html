@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企業管理 期中考題庫</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 避免點擊時的藍色高光 */
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* 自訂捲軸樣式，讓右側題盤更美觀 */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #4b5563;
+            border-radius: 20px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #374151;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 dark:bg-[#121212] text-gray-900 dark:text-gray-100 transition-colors duration-300 selection:bg-blue-500/30">
+
+    <!-- 頂部導覽列 -->
+    <header class="bg-white dark:bg-[#1e1e1e] border-b border-gray-200 dark:border-gray-800 px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between sticky top-0 z-20 shadow-md gap-4">
+        <div class="flex items-center gap-3 w-full md:w-auto justify-center md:justify-start">
+            <div class="flex items-center justify-center w-8 h-8 rounded-md bg-blue-100 dark:bg-gray-700 text-blue-600 dark:text-white font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+            </div>
+            <h1 class="text-lg md:text-xl font-bold tracking-wide">企業管理 期中考題庫</h1>
+        </div>
+        
+        <!-- 頂部功能按鈕群 -->
+        <div class="flex items-center flex-wrap justify-center gap-2">
+            <button onclick="toggleTheme()" id="theme-btn" class="flex items-center gap-1.5 px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-medium rounded transition-colors shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <span>淺色模式</span>
+            </button>
+            <button onclick="toggleMode()" id="mode-btn" class="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs md:text-sm font-medium rounded transition-colors shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                <span>讀題模式</span>
+            </button>
+            <button onclick="randomizeQuestions()" class="flex items-center gap-1.5 px-3 py-1.5 bg-purple-500 hover:bg-purple-600 text-white text-xs md:text-sm font-medium rounded transition-colors shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"/><path d="m18 2 4 4-4 4"/><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"/><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"/><path d="m18 14 4 4-4 4"/></svg>
+                <span>隨機出題</span>
+            </button>
+            <button onclick="practiceWrong()" class="flex items-center gap-1.5 px-3 py-1.5 bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-sm font-medium rounded transition-colors shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                <span>錯誤重練</span>
+            </button>
+            <button onclick="resetProgress()" class="flex items-center gap-1.5 px-3 py-1.5 bg-rose-500 hover:bg-rose-600 text-white text-xs md:text-sm font-medium rounded transition-colors shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                <span>重新開始</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 載入中畫面 -->
+    <div id="loading" class="flex justify-center items-center h-[60vh] text-lg text-gray-500 animate-pulse">
+        正在載入題庫資料，請稍候...
+    </div>
+
+    <!-- 主要內容區 -->
+    <main id="app-content" class="max-w-7xl mx-auto px-4 py-8 flex flex-col lg:flex-row lg:items-start gap-6 hidden">
+        
+        <!-- 左側：測驗區 -->
+        <div class="flex-1 bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-sm transition-colors duration-300">
+            <!-- 統計資訊 -->
+            <div class="flex justify-between items-end border-b border-gray-200 dark:border-gray-800 pb-4 mb-6">
+                <span id="progress" class="text-sm md:text-base font-medium text-gray-500 dark:text-gray-400"></span>
+                <span id="score" class="text-sm md:text-base font-bold text-gray-600 dark:text-gray-300"></span>
+            </div>
+            
+            <!-- 題目內容 -->
+            <div id="question" class="text-lg md:text-xl font-bold mb-8 text-gray-800 dark:text-gray-100 leading-relaxed"></div>
+            
+            <!-- 選項列表 -->
+            <ul id="options" class="space-y-3 mb-6"></ul>
+            
+            <!-- 回饋訊息 (答對/答錯) -->
+            <div id="feedback" class="text-center font-bold text-lg min-h-[30px] mb-8"></div>
+            
+            <!-- 底部控制按鈕 -->
+            <div class="flex justify-between gap-4 mt-8 border-t border-gray-200 dark:border-gray-800 pt-6">
+                <button id="prev-btn" onclick="prevQuestion()" class="flex-1 max-w-[160px] md:max-w-[200px] flex items-center justify-center gap-2 bg-gray-200 dark:bg-[#2d2d2d] hover:bg-gray-300 dark:hover:bg-[#3d3d3d] text-gray-700 dark:text-gray-200 py-2.5 md:py-3 rounded-xl font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    ← 上一題
+                </button>
+                <button id="next-btn" onclick="nextQuestion()" class="flex-1 max-w-[160px] md:max-w-[200px] flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2.5 md:py-3 rounded-xl font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    下一題 →
+                </button>
+            </div>
+        </div>
+
+        <!-- 右側：題盤導覽 -->
+        <div class="w-full lg:w-80 lg:shrink-0 bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 rounded-2xl p-5 md:p-6 shadow-sm self-start lg:sticky lg:top-24 transition-colors duration-300">
+            <h3 class="text-center font-bold text-lg mb-4 text-gray-800 dark:text-gray-100">題盤導覽</h3>
+            <!-- 修正點 1：強制使用 5 欄 (平板以上 10 欄) 以符合常規倍數，修正點 2：加入 p-2 防止邊框被裁切 -->
+            <div id="grid-container" class="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-5 gap-2.5 custom-scrollbar max-h-[300px] lg:max-h-[calc(100vh-200px)] overflow-y-auto p-2">
+                <!-- 網格由 JS 生成 -->
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- 腳本邏輯 -->
+    <script>
+        let rawQuizData = []; // Will be loaded from JSON
+
+        const STORAGE_KEY = 'exam_ba_progress_v2';
+        const ORDER_KEY = 'exam_ba_order_v2';
+        const THEME_KEY = 'exam_ba_theme_tailwind';
+        let originalQuizData = []; // 儲存最原始的 100 題
+        let quizData = []; // 當前正在測驗的題目陣列（可能被隨機打亂或篩選）
+        let userAnswers = {}; // 儲存使用者的作答紀錄 { questionId: 'A' }
+        let currentQuestionIndex = 0;
+        let isStudyMode = false; // 讀題模式狀態
+
+        // 0. 深色模式初始化與切換
+        function initTheme() {
+            const savedTheme = localStorage.getItem(THEME_KEY);
+            const htmlEl = document.documentElement;
+            const themeBtnSpan = document.querySelector('#theme-btn span');
+            
+            // 預設深色模式 (與剛設計的首頁風格一致)
+            if (savedTheme === 'light') {
+                htmlEl.classList.remove('dark');
+                if(themeBtnSpan) themeBtnSpan.textContent = '深色模式';
+            } else {
+                htmlEl.classList.add('dark');
+                if(themeBtnSpan) themeBtnSpan.textContent = '淺色模式';
+            }
+        }
+
+        function toggleTheme() {
+            const htmlEl = document.documentElement;
+            const isDark = htmlEl.classList.toggle('dark');
+            localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
+            
+            const themeBtnSpan = document.querySelector('#theme-btn span');
+            if (themeBtnSpan) {
+                themeBtnSpan.textContent = isDark ? '淺色模式' : '深色模式';
+            }
+        }
+
+        // 保存狀態到 LocalStorage
+        function saveState() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(userAnswers));
+            localStorage.setItem(ORDER_KEY, JSON.stringify(quizData.map(q => q.id)));
+        }
+
+        // 模式切換邏輯
+        function toggleMode() {
+            isStudyMode = !isStudyMode;
+            const modeBtnSpan = document.querySelector('#mode-btn span');
+            
+            if (isStudyMode) {
+                modeBtnSpan.textContent = '切換測驗模式';
+            } else {
+                modeBtnSpan.textContent = '讀題模式';
+            }
+            
+            // 重新載入當前題目以套用模式變化
+            loadQuestion(currentQuestionIndex);
+        }
+
+        // 1. 載入並轉換題庫資料
+        async function loadData() {
+            try {
+                // Fetch the JSON file
+                const response = await fetch('question-database\\ba-questions.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                rawQuizData = await response.json();
+
+                originalQuizData = rawQuizData.map(q => {
+                    const options = {};
+                    q.O.forEach(opt => {
+                        const match = opt.match(/^([A-E])\)\s*(.*)/);
+                        if (match) {
+                            options[match[1]] = match[2];
+                        }
+                    });
+
+                    return {
+                        id: parseInt(q.N, 10),
+                        question: q.Q,
+                        answer: q.A,
+                        options: options
+                    };
+                });
+                
+                if(originalQuizData.length === 0) throw new Error("題庫資料為空");
+                
+                // 隱藏 Loading，顯示主內容
+                document.getElementById('loading').classList.add('hidden');
+                document.getElementById('app-content').classList.remove('hidden');
+
+                initApp();
+            } catch (e) {
+                document.getElementById('loading').innerHTML = `<span class="text-rose-500">題庫載入失敗：${e.message}</span>`;
+                console.error(e);
+            }
+        }
+
+        // 2. 初始化應用程式
+        function initApp() {
+            // 讀取進度與順序
+            const savedAnswers = localStorage.getItem(STORAGE_KEY);
+            if (savedAnswers) {
+                userAnswers = JSON.parse(savedAnswers);
+            }
+            
+            const savedOrder = localStorage.getItem(ORDER_KEY);
+            if (savedOrder) {
+                const orderArray = JSON.parse(savedOrder);
+                quizData = orderArray.map(id => originalQuizData.find(q => q.id === id)).filter(Boolean);
+            } else {
+                quizData = [...originalQuizData];
+            }
+
+            renderNavigationGrid();
+            loadQuestion(0);
+            
+            // 綁定鍵盤事件
+            document.addEventListener('keydown', handleKeyPress);
+        }
+
+        // 4. 渲染導覽題盤 (融入 Tailwind)
+        function renderNavigationGrid() {
+            const grid = document.getElementById('grid-container');
+            grid.innerHTML = '';
+            
+            quizData.forEach((q, index) => {
+                const item = document.createElement('div');
+                item.textContent = index + 1;
+                item.title = `原始題庫 #${q.id}`;
+                item.onclick = () => loadQuestion(index);
+                
+                // 修正點 3：縮小數字框尺寸，確保是完美的正方形，並微調字體大小
+                let classes = 'aspect-square flex items-center justify-center rounded-md font-bold cursor-pointer transition-all duration-200 text-[13px] md:text-sm ';
+                
+                // 狀態樣式判斷
+                if (currentQuestionIndex === index) {
+                    // 使用 ring-offset-2 提供更舒服的安全距離，且 p-2 確保這裡不會被切掉
+                    classes += 'ring-2 ring-blue-500 ring-offset-2 dark:ring-offset-[#1a1a1a] scale-110 z-10 shadow-md ';
+                }
+                
+                if (userAnswers[q.id]) {
+                    if (userAnswers[q.id] === q.answer) {
+                        classes += 'bg-emerald-500 text-white dark:bg-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-700 ';
+                    } else {
+                        classes += 'bg-rose-500 text-white dark:bg-rose-600 hover:bg-rose-600 dark:hover:bg-rose-700 ';
+                    }
+                } else {
+                    classes += 'bg-gray-100 dark:bg-[#2d2d2d] text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-[#3d3d3d] ';
+                }
+                
+                item.className = classes;
+                grid.appendChild(item);
+            });
+        }
+
+        // 5. 載入特定題目 (融入 Tailwind)
+        function loadQuestion(index) {
+            if (index < 0 || index >= quizData.length) return;
+            currentQuestionIndex = index;
+            
+            const q = quizData[index];
+            document.getElementById('question').innerHTML = `
+                <span class="text-blue-500 dark:text-blue-400 mr-2">Q${index + 1}.</span> 
+                <span class="text-sm text-gray-400 dark:text-gray-500 font-normal mr-2">(原始題號: ${q.id})</span><br>
+                <div class="mt-2">${q.question}</div>
+            `;
+            
+            const optionsEl = document.getElementById('options');
+            optionsEl.innerHTML = '';
+            
+            const feedbackEl = document.getElementById('feedback');
+            feedbackEl.textContent = '';
+            feedbackEl.className = 'text-center font-bold text-lg min-h-[30px] mb-8 ';
+            
+            // 檢查這題是否已經作答過
+            const hasAnswered = userAnswers[q.id] !== undefined;
+            const selectedKey = userAnswers[q.id];
+
+            for (const [key, value] of Object.entries(q.options)) {
+                const li = document.createElement('li');
+                
+                // 調整選項 Padding 讓手機版顯示更緊湊
+                let liClasses = 'w-full text-left p-3 md:p-4 rounded-xl border-2 transition-all flex items-start text-base md:text-lg ';
+                
+                if (isStudyMode) {
+                    // 讀題模式：標示出正確答案並禁用點擊
+                    liClasses += 'cursor-default ';
+                    if (key === q.answer) {
+                        liClasses += 'bg-emerald-50 dark:bg-emerald-500/20 border-emerald-500 text-emerald-900 dark:text-emerald-100 shadow-[0_0_15px_rgba(16,185,129,0.15)] ';
+                    } else {
+                        liClasses += 'bg-gray-50 dark:bg-[#2d2d2d] border-transparent text-gray-400 dark:text-gray-500 opacity-60 ';
+                    }
+                } else {
+                    // 測驗模式
+                    if (hasAnswered) {
+                        liClasses += 'cursor-default ';
+                        if (key === q.answer) {
+                            liClasses += 'bg-emerald-50 dark:bg-emerald-500/20 border-emerald-500 text-emerald-900 dark:text-emerald-100 ';
+                        } else if (key === selectedKey && selectedKey !== q.answer) {
+                            liClasses += 'bg-rose-50 dark:bg-rose-500/20 border-rose-500 text-rose-900 dark:text-rose-100 opacity-90 ';
+                        } else {
+                            liClasses += 'bg-gray-50 dark:bg-[#2d2d2d] border-transparent text-gray-800 dark:text-gray-300 opacity-60 ';
+                        }
+                    } else {
+                        liClasses += 'cursor-pointer bg-gray-50 dark:bg-[#2d2d2d] border-transparent hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-200 ';
+                        li.onclick = () => selectOption(key);
+                    }
+                }
+                
+                li.className = liClasses;
+                li.innerHTML = `<strong class="mr-3 mt-1 font-bold">${key}.</strong> <span class="flex-1">${value}</span>`;
+                optionsEl.appendChild(li);
+            }
+
+            if (isStudyMode) {
+                feedbackEl.textContent = `💡 【讀題模式】正確解答：${q.answer}`;
+                feedbackEl.classList.add('text-purple-600', 'dark:text-purple-400');
+            } else if (hasAnswered) {
+                if (selectedKey === q.answer) {
+                    feedbackEl.textContent = "✅ 答對了！";
+                    feedbackEl.classList.add('text-emerald-600', 'dark:text-emerald-500');
+                } else {
+                    feedbackEl.textContent = `❌ 答錯了！正確答案是 ${q.answer}`;
+                    feedbackEl.classList.add('text-rose-600', 'dark:text-rose-500');
+                }
+            }
+
+            // 更新按鈕狀態
+            document.getElementById('prev-btn').disabled = (index === 0);
+            document.getElementById('next-btn').disabled = (index === quizData.length - 1);
+            
+            // 重新渲染題盤以更新外框高亮
+            renderNavigationGrid();
+            
+            // 手機版自動捲動到最上方
+            if(window.innerWidth < 1024) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            updateStats();
+        }
+
+        // 6. 選擇答案
+        function selectOption(selectedKey) {
+            if (isStudyMode) return; 
+            const q = quizData[currentQuestionIndex];
+            if (userAnswers[q.id]) return; 
+            
+            userAnswers[q.id] = selectedKey;
+            saveState();
+            
+            // 重新載入一次以顯示結果 (內部會連帶呼叫 renderNavigationGrid 更新顏色)
+            loadQuestion(currentQuestionIndex);
+        }
+
+        // 7. 切換題目
+        function prevQuestion() { loadQuestion(currentQuestionIndex - 1); }
+        function nextQuestion() { loadQuestion(currentQuestionIndex + 1); }
+
+        // 8. 更新統計與分數
+        function updateStats() {
+            let totalAnswered = 0;
+            let correctCount = 0;
+            
+            quizData.forEach(q => {
+                if (userAnswers[q.id]) {
+                    totalAnswered++;
+                    if (userAnswers[q.id] === q.answer) {
+                        correctCount++;
+                    }
+                }
+            });
+
+            document.getElementById('progress').textContent = `第 ${currentQuestionIndex + 1} 題 / 共 ${quizData.length} 題`;
+            
+            const scoreEl = document.getElementById('score');
+            if (isStudyMode) {
+                scoreEl.textContent = `[讀題模式中]`;
+                scoreEl.className = 'text-sm md:text-base font-bold text-purple-600 dark:text-purple-400';
+            } else {
+                const percentage = totalAnswered === 0 ? 0 : Math.round((correctCount / totalAnswered) * 100);
+                scoreEl.textContent = `進度: ${totalAnswered}/${quizData.length} | 正確率: ${percentage}%`;
+                scoreEl.className = 'text-sm md:text-base font-bold text-gray-600 dark:text-gray-300';
+            }
+        }
+        
+        // 9. 隨機打亂陣列 (Fisher-Yates Shuffle)
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        // 10. 隨機出題
+        function randomizeQuestions() {
+            if (confirm("這將會清除目前的作答紀錄，並隨機打亂所有題目順序，確定要開始嗎？")) {
+                quizData = shuffleArray([...originalQuizData]);
+                userAnswers = {};
+                saveState();
+                loadQuestion(0);
+            }
+        }
+        
+        // 11. 錯誤重練
+        function practiceWrong() {
+            const wrongQs = originalQuizData.filter(q => userAnswers[q.id] && userAnswers[q.id] !== q.answer);
+            
+            if (wrongQs.length === 0) {
+                alert("太棒了！目前沒有任何答錯的題目喔！");
+                return;
+            }
+            
+            if (confirm(`共有 ${wrongQs.length} 題錯誤。進入「錯誤重練」模式將會把這幾題抓出來，並清除作答紀錄讓你重新挑戰。確定嗎？`)) {
+                quizData = [...wrongQs];
+                userAnswers = {};
+                saveState();
+                loadQuestion(0);
+            }
+        }
+
+        // 12. 清除進度 / 重設為正常模式
+        function resetProgress() {
+            if(confirm("確定要清除所有作答紀錄，並恢復原始題庫與順序嗎？")) {
+                quizData = [...originalQuizData];
+                userAnswers = {};
+                saveState();
+                loadQuestion(0);
+            }
+        }
+
+        // 13. 鍵盤快捷鍵
+        function handleKeyPress(e) {
+            const key = e.key.toUpperCase();
+            const q = quizData[currentQuestionIndex];
+            
+            if (!isStudyMode && ['A', 'B', 'C', 'D', 'E'].includes(key)) {
+                if (!userAnswers[q.id]) {
+                    selectOption(key);
+                }
+            } else if (e.key === 'ArrowLeft') {
+                prevQuestion();
+            } else if (e.key === 'ArrowRight') {
+                nextQuestion();
+            }
+        }
+
+        // 啟動解析與主題
+        initTheme();
+        window.onload = loadData;
+    </script>
+</body>
+</html>
